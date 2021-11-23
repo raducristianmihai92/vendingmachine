@@ -1,6 +1,5 @@
 package net.mvpmatch.vendingmachine.web.dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import java.io.Serializable;
