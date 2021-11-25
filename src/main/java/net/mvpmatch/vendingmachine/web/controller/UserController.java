@@ -166,6 +166,7 @@ public class UserController {
         }
 
         user.get().setDeposit(0);
+        userService.save(user.get());
         message = "Your deposit was successfully reset!";
         return new ResponseEntity<String>(message, HttpStatus.OK);
     }
