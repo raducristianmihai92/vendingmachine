@@ -1,10 +1,5 @@
 pipeline {
-	agent {
-        docker {
-            image 'maven:3.8.1-jdk-11' // Specify the Maven Docker image with Java
-            args '-v $HOME/.m2:/root/.m2' // Optional: Mount the .m2 directory for caching dependencies
-        }
-    }
+	agent any
     stages {
         stage('Checkout') {
             steps {
